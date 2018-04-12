@@ -9,9 +9,110 @@ and open the template in the editor.
         <title>TCC2018</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background: #000;
+            }
+            
+            #menu{
+                float: left;
+                margin: 50px;
+            }
+            #menu ul{
+                font: 16px arial, tahoma, verdana;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+               
+            }
+            
+            #menu ul li{
+                float:  left;
+                position: relative;
+                display: block;
+            }
+            #menu ul li a{
+                padding: 15px 20px;
+                display: block;
+                color: #555;
+                background: #fff; 
+                text-decoration: none;
+                margin: 0 1px;
+                border-top: 1px solid #555;
+                
+                }
+                
+                #menu ul li a:hover{
+                        color: #4682b4;
+                }
+                #menu li ul{
+                    display: none;
+                }
+                #menu li:hover ul{
+                    display: block;
+                    position: relative;
+                }
+                #menu li:hover li{
+                    float: none;
+                    font-size: 12px;
+                }
+                
+                #menu li:hover a{
+                    background: #333;
+                    color: #dcdcdc;
+                } 
+                #menu li:hover li a:hover{
+                    background: #222;
+                    
+                } 
+        </style>
     </head>
     <body>
+        <div id ="menu">
+            <ul>
+                <li><a href="#">Cadastros</a>
+                    <ul>
+                        <li><a href="#">Pessoa</a></li>
+                        <li><a href="#">Projeto</a></li>
+                        <li><a href="#">Projeto</a></li>
+                        <li><a href="#">Projeto</a></li>
+                        <li><a href="#">Sair</a></li>
+                    </ul>
+                </li>
+                
+               <li><a href="pessoaJPS">Cadastrar projeto</a>
+                   <ul>
+                       <li><a href="#">Pessoa</a></li>
+                       <li><a href="#">Pessoa</a></li>
+                       <li><a href="#">Pessoa</a></li>
+                       <li><a href="#">Pessoa</a></li>
+                       
+                   </ul>
+               </li>
+               <li><a href="pessoaJPS">Relatórios</a>
+                   <ul>
+                       <li><a href="#">Relatórios</a></li>
+                       <li><a href="#">Relatórios</a></li>
+                       <li><a href="#">Relatórios</a></li>
+                       <li><a href="#">Relatórios</a></li>
+                       
+                   </ul>
+               </li>
+               <li><a href="pessoaJPS">Ambiente</a>
+                   <ul>
+                       <li><a href="#">Ambiente</a></li>
+                       <li><a href="#">Ambiente</a></li>
+                       <li><a href="#">Ambiente</a></li>
+                       <li><a href="#">Ambiente</a></li>
+                       
+                   </ul>
+               </li>
+               
+            </ul>
+        </div>
         
-        <input type="submit" value="Cadastro pessoa" name="Pessoa" />
+      
     </body>
 </html> 
